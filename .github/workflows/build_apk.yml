@@ -38,3 +38,11 @@ jobs:
           name: FastNet-APK
           path: build/app/outputs/flutter-apk/app-release.apk
           retention-days: 30
+      - name: Generate Android platform files
+        run: flutter create --platforms=android --org com.fastnet .
+
+      - name: Remove generated sample test
+        run: rm -f test/widget_test.dart
+
+      - name: Get dependencies
+        run: flutter pub get
