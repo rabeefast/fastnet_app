@@ -1,23 +1,21 @@
 // ============================================================
-// املأ القيم الخمس من Firebase Console:
-// Project settings -> General -> Your apps -> SDK setup and configuration
-// (اختر تطبيق Android الذي سجلته باسم com.fastnet.fastnet_app)
+// ملف إعداد Firebase — تم تعبئته تلقائيًا من google-services.json
+// المشروع: fast-net2
+// لا تشارك هذا الملف علنًا — اتركه داخل مستودعك الخاص
 // ============================================================
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
-import 'package:flutter/foundation.dart' show defaultTargetPlatform, TargetPlatform;
 
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
-    // التطبيق يستهدف Android فقط في هذه المرحلة
     return android;
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'PASTE_API_KEY',
-    appId: 'PASTE_APP_ID', // 1:xxxx:android:xxxx
-    messagingSenderId: 'PASTE_SENDER_ID',
-    projectId: 'PASTE_PROJECT_ID',
-    storageBucket: 'PASTE_STORAGE_BUCKET',
+    apiKey: 'AIzaSyBrPrWAhTKBjHeWadwUzz6Cc2efqSAIdA8',
+    appId: '1:339836909590:android:f2a58b7fac1c9f5d4e1d37',
+    messagingSenderId: '339836909590',
+    projectId: 'fast-net2',
+    storageBucket: 'fast-net2.firebasestorage.app',
   );
 
   static bool get isConfigured =>
