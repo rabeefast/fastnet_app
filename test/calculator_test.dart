@@ -45,3 +45,7 @@ void main() {
     });
   });
 }
+    final c2500 = CategoryConfig(
+        key: 'c2500', label: '2500', umProfile: '2500r',
+        mgMode: 'card', mgPrice: 2125, agMode: 'card', agPrice: 2250,
+        pageSize: 0, freePerPage: 0);
