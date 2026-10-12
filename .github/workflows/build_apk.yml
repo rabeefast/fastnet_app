@@ -23,11 +23,19 @@ jobs:
       - name: Generate Android platform files
         run: flutter create --platforms=android --org com.fastnet .
 
+      - name: Set minSdk 23 for Firebase
+        run: |
+          sed -i 's/minSdk = flutter.minSdkVersion/minSdk = 23/' android/app/build.gradle.kts || true
+          sed -i 's/minSdkVersion = flutter.minSdkVersion/minSdkVersion = 23/' android/app/build.gradle.kts || true
+
       - name: Remove generated sample test
         run: rm -f test/widget_test.dart
 
       - name: Get dependencies
         run: flutter pub get
+
+      - name: Static analysis
+        run: flutter analyze --no-fatal-warnings
 
       - name: Run unit tests
         run: flutter test test/calculator_test.dart
