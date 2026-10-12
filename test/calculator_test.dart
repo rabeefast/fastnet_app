@@ -14,7 +14,8 @@ void main() {
         pageSize: 51, freePerPage: 1);
     final c2500 = CategoryConfig(
         key: 'c2500', label: '2500', umProfile: '2500r',
-        mgMode: 'card', mgPrice: 2125, agMode: 'card', agPrice: 2250);
+        mgMode: 'card', mgPrice: 2125, agMode: 'card', agPrice: 2250,
+        pageSize: 0, freePerPage: 0);
     final c500 = CategoryConfig(
         key: 'c500', label: '500', umProfile: '500new',
         mgMode: 'page', mgPrice: 21250, agMode: 'card', agPrice: 450,
@@ -45,7 +46,3 @@ void main() {
     });
   });
 }
-    final c2500 = CategoryConfig(
-        key: 'c2500', label: '2500', umProfile: '2500r',
-        mgMode: 'card', mgPrice: 2125, agMode: 'card', agPrice: 2250,
-        pageSize: 0, freePerPage: 0);
