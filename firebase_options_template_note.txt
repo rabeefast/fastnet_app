@@ -1,0 +1,2 @@
+ملاحظة: ملف lib/firebase_options.dart موجود في مجلد lib
+املأ القيم الخمس من: Firebase Console -> Project settings -> General -> Your apps -> SDK setup
